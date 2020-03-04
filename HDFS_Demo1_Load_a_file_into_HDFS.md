@@ -11,7 +11,7 @@ within the folder /user/cloudera/my_datasets while specifying the : block size a
 `hdfs dfs -mkdir /user/cloudera/my_datasets`
 
 - **Step 3** : Copy the file from ***/home/cloudera/Desktop/datasets*** to ***/user/cloudera/my_datasets*** while specifying the blocksize \
-`hdfs dfs -D dfs.blocksize=1048576 -put /home/cloudera/Desktop/datasets/myFile.txt`/user/cloudera/my_datasets`
+`hdfs dfs -D dfs.blocksize=1048576 -put /home/cloudera/Desktop/datasets/myFile.txt /user/cloudera/my_datasets`
 
 Note : The value of dfs.blocksize has to be greater than the minimal value (dfs.namenode.fs-limits.min-block-size = 1048576) and has to be a multiple of 512 (the size of the checksum).
 
