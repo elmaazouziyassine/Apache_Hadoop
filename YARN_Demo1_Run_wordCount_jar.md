@@ -8,11 +8,11 @@ I have a jar program and I want to apply it upon some data using YARN.
 - **Step 2** : Load the input file ***article.txt*** into HDFS directory ***/user/cloudera/my_datasets*** \
 `hdfs dfs -mkdir /user/cloudera/my_datasets` \
 `hdfs dfs -put /home/cloudera/Desktop/datasets/article.txt /user/cloudera/my_datasets` \
-`hdfs dfs -ls /user/cloudera/my_dataset`  
+`hdfs dfs -ls /user/cloudera/my_datasets`  
 
 - **Step 3** : Load the jar ***hadoop-mapreduce-examples.jar*** into HDFS directory ***/user/cloudera/my_scripts*** \
 `hdfs dfs -mkdir /user/cloudera/my_scripts` \
-`hdfs dfs -put /home/cloudera/Desktop/datasets/hadoop-mapreduce-examples.jar /user/cloudera/my_scripts` \
+`hdfs dfs -put /home/cloudera/Desktop/scripts/hadoop-mapreduce-examples.jar /user/cloudera/my_scripts` \
 `hdfs dfs -ls /user/cloudera/my_scripts` 
 
 Note : The jar could be found in : \
