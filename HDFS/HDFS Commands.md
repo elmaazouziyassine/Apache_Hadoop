@@ -1,6 +1,6 @@
+
+hdfs commands are programs written in Java. 
 hdfs dfs = hadoop fs
-
-
 hdfs dfs version | to display HDFS version
 hdfs dfs -help | to display help
 hdfs dfs -ls <hdfs_path_dir> | to list the content of a directory
